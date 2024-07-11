@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+  
+
+
+    <div class="container">
+        <h2>
+         Sign up Your Account  
+        </h2>
+        <form onsubmit="Signup(event)">
+          <input type="text" name="name" placeholder="Your name">
+            <input type="Email" placeholder="enter your email" id="email">
+            <input type="password" name="" id="password" placeholder="password">
+            <input type="password" name="confirm_password" placeholder="Re-enter password">
+            <input type="submit" value="Signin" >
+            <hr>
+            <br>
+            <!-- <input type="Login" value="Login" ><a href="./login.html"></a> -->
+          <button class="login"><a href="./login.html" style="text-decoration: none; color: aliceblue";>Login</a></button>
+            <p class="note">By creating an account, you agree to form <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+  
+</form>
+
+
+
+
+
+    </div>
+    <script src="app.js" ></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  
+  
+  
+<script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyCv3tliVYETPiDI9ELhRA1LyEWO99_7BtY",
+    authDomain: "testing-app-cacf8.firebaseapp.com",
+    projectId: "testing-app-cacf8",
+    storageBucket: "testing-app-cacf8.appspot.com",
+    messagingSenderId: "221578730896",
+    appId: "1:221578730896:web:2decba9044042b61f46715",
+    measurementId: "G-6YW068B64J"
+  };
+ 
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>

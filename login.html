@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="style.css">
+<script src="apps.js"></script>
+
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Log In</h2>
+  <form onsubmit="Login(event)">
+  <form action="/submit-your-form-handler" method="post">
+    <input type="text" name="email" id="login-email" placeholder="Username" required >
+    <br>
+    <input type="password" id="login-password" name="password" placeholder="Password" required>
+   <br>
+    <input type="submit" value="Login">
+<br>
+ <br>
+    <h5>Hey user@gmail.com</h5>
+    <h6>Are you sure 
+      ?you want to logout your account
+    </h6>
+    <hr>
+    <br>
+  <input class="submit" onclick="LogOut()" type="button" value="LogOut">
+    <hr>
+    <!-- <button class="login1" style="text-decoration: none;"><a href="./logout.html" style="text-decoration: none; color: aliceblue;">LogOut</a></button> -->
+
+    <div class="message"></div>
+  </form>
+</div>
+</div>
+<script src="app.js" ></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+
+
+<script>
+  const firebaseConfig = {
+apiKey: "AIzaSyCv3tliVYETPiDI9ELhRA1LyEWO99_7BtY",
+authDomain: "testing-app-cacf8.firebaseapp.com",
+projectId: "testing-app-cacf8",
+storageBucket: "testing-app-cacf8.appspot.com",
+messagingSenderId: "221578730896",
+appId: "1:221578730896:web:2decba9044042b61f46715",
+measurementId: "G-6YW068B64J"
+};
+
+firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
